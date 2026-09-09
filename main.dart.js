@@ -83654,7 +83654,7 @@ a6D(a){var s=0,r=A.R(t.H),q=1,p=[],o=this,n,m,l,k,j,i
 var $async$kV=A.S(function(b,c){if(b===1){p.push(c)
 s=q}for(;;)switch(s){case 0:q=3
 s=6
-return A.U(A.auX(A.dJ("http://localhost:3000/api/dashboard?trainId="+a+"&lang="+o.y)),$async$kV)
+return A.U(A.auX(A.dJ("/api/dashboard?trainId="+a+"&lang="+o.y)),$async$kV)
 case 6:n=c
 if(n.b===200){k=n
 m=B.bh.dr(A.ar9(A.aqr(k.e)).dr(k.w))
@@ -83676,7 +83676,7 @@ wc(){var s=0,r=A.R(t.H),q=1,p=[],o=this,n,m,l,k,j,i
 var $async$wc=A.S(function(a,b){if(a===1){p.push(b)
 s=q}for(;;)switch(s){case 0:q=3
 s=6
-return A.U(A.auX(A.dJ("http://localhost:3000/api/notifications?lang="+o.y)),$async$wc)
+return A.U(A.auX(A.dJ("/api/notifications?lang="+o.y)),$async$wc)
 case 6:n=b
 if(n.b===200){k=n
 m=B.bh.dr(A.ar9(A.aqr(k.e)).dr(k.w))
@@ -83700,7 +83700,7 @@ var $async$wZ=A.S(function(b,c){if(b===1){o.push(c)
 s=p}for(;;)switch(s){case 0:if(B.c.j9(a).length===0){s=1
 break}p=4
 s=7
-return A.U(A.auX(A.dJ("http://localhost:3000/api/search?q="+a+"&lang="+n.y)),$async$wZ)
+return A.U(A.auX(A.dJ("/api/search?q="+a+"&lang="+n.y)),$async$wZ)
 case 7:m=c
 if(m.b===200){j=m
 l=t.j.a(B.bh.dr(A.ar9(A.aqr(j.e)).dr(j.w)))
@@ -83725,7 +83725,7 @@ vT(a){return this.a3C(a)},
 a3C(a){var s=0,r=A.R(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g
 var $async$vT=A.S(function(b,c){if(b===1){p.push(c)
 s=q}for(;;)switch(s){case 0:q=3
-k=A.dJ("http://localhost:3000/api/track-train")
+k=A.dJ("/api/track-train")
 j=t.N
 i=A.X(["Content-Type","application/json"],j,j)
 s=6
@@ -83765,34 +83765,34 @@ l=A.fH(B.bn)
 k=A.c([],t.wi)
 j=$.aa
 s.lt(new A.z3(new A.amz(this),r,!1,0.5625,B.k,i,i,i,i,h.ry.e,!0,!0,i,i,i,!1,i,"Close Bottom Sheet",new A.bw(B.aO,q,t.Tt),"Scrim",i,i,i,p,A.ao(t.f9),new A.bc(i,t.Ts),new A.bc(i,t.A),new A.mf(),i,0,new A.b8(new A.ae(o,n),m),l,k,i,B.f3,new A.bw(i,q,t.XR),new A.b8(new A.ae(j,n),m),new A.b8(new A.ae(j,n),m),t.Fu))},
-a5b(){var s,r,q,p,o,n,m,l,k,j,i,h="http://localhost:3000",g=null,f="query",e=t.N,d=t.z,c=A.o(e,d)
-c.m(0,"transports",A.c(["websocket"],t.s))
-c.E(0,"autoConnect")
-s=A.dJ(h)
+a5b(){var s,r,q,p,o,n,m,l,k,j,i,h=null,g="query",f=t.N,e=t.z,d=A.o(f,e)
+d.m(0,"transports",A.c(["websocket"],t.s))
+d.E(0,"autoConnect")
+s=A.dJ("")
 r=s.geq()+"://"+s.gko()+":"+s.gmS()
 q=s.gdP()
 p=$.ar0.aa(r)&&$.ar0.h(0,r).d.aa(q)
-o=J.d(c.h(0,"forceNew"),!0)||J.d(c.h(0,"force new connection"),!0)||!1===c.h(0,"multiplex")||p
+o=J.d(d.h(0,"forceNew"),!0)||J.d(d.h(0,"force new connection"),!0)||!1===d.h(0,"multiplex")||p
 n=A.ce()
-if(o){$.aFc().aF(B.n,"ignoring socket cache for http://localhost:3000",g,g)
-n.b=A.ay8(c,h)}else{m=$.ar0.h(0,r)
-if(m==null){m=A.ay8(c,h)
-$.ar0.m(0,r,m)}n.b=m}if(s.glv().length!==0&&c.h(0,f)==null)c.m(0,f,s.glv())
-else{m=c.h(0,f)
-if(t.f.b(m))c.m(0,f,A.aQs(c.h(0,f)))}m=n.b5()
+if(o){$.aFc().aF(B.n,"ignoring socket cache for ",h,h)
+n.b=A.ay8(d,"")}else{m=$.ar0.h(0,r)
+if(m==null){m=A.ay8(d,"")
+$.ar0.m(0,r,m)}n.b=m}if(s.glv().length!==0&&d.h(0,g)==null)d.m(0,g,s.glv())
+else{m=d.h(0,g)
+if(t.f.b(m))d.m(0,g,A.aQs(d.h(0,g)))}m=n.b5()
 l=s.gdP().length===0?"/":s.gdP()
 k=m.d
 j=k.h(0,l)
 if(j==null){i=t.sB
-j=new A.B2(m,[],[],[],l,c,A.o(d,d),A.o(d,d),[],[],A.cy(g,g,g,e,i),A.cy(g,g,g,e,i),A.c([],t.hx))
-c.h(0,f)
-j.y=c.h(0,"auth")
-e=m.cy
-e===$&&A.a()
-if(e)j.TH()
-k.m(0,l,j)}else{e=m.cy
-e===$&&A.a()
-if(e&&j.cx==null)j.TH()}this.as=j
+j=new A.B2(m,[],[],[],l,d,A.o(e,e),A.o(e,e),[],[],A.cy(h,h,h,f,i),A.cy(h,h,h,f,i),A.c([],t.hx))
+d.h(0,g)
+j.y=d.h(0,"auth")
+f=m.cy
+f===$&&A.a()
+if(f)j.TH()
+k.m(0,l,j)}else{f=m.cy
+f===$&&A.a()
+if(f&&j.cx==null)j.TH()}this.as=j
 j.j_("dashboard_update",new A.ams(this))},
 l(){var s,r=this.as
 r===$&&A.a()
